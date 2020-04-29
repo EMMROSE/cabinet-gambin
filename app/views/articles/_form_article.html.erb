@@ -1,0 +1,12 @@
+<div class="container form-container">
+   <div class="form-top">
+    <%= f.input :title, label: 'Titre', placeholder: "Titre pour l'article" %>
+    <%= f.input :resume, label: 'Résumé', placeholder: "Un résumé en quelques mots" %>
+    <%= f.input :content, label: "Rédaction de l'article", as: :text, placeholder: "Le contenu de l'article." %>
+    <%= f.input :cover, label: 'Ajoutez une illustration', as: :file %>
+   </div>
+   <div class="form-button">
+    <%= f.submit "Editer", class: 'btn btn-contact' %>
+   </div>
+ <% end %>
+</div>

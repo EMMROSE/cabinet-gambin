@@ -20,3 +20,42 @@
     margin-bottom: 20px;
   }
 }
+
+.presentation {
+  height: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  img {
+    height: 160px;
+  }
+}
+
+.presentation-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.presentation-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+.presentation-left > .top {
+  img {
+    height: 100%;
+  }
+}
+
+.presentation-right > .top {
+  img {
+    height: 100%;
+  }
+}
+.presentation-left > .bottom {
+  border: solid 1px black;
+}
+
