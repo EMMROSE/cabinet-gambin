@@ -47,9 +47,17 @@
   </div>
   <div class ="articles">
     <div class= "article">
-      <div class="top">
-      </div>
-      <div class="bottom"></div>
+      <% @articles.each do |work| %>
+        <%= link_to articles_path do %>
+          <div class="article-top">
+            <%= cl_image_tag article.cover.key, class: "cover"%>
+            <div class="article-bottom">
+              <h3><%= article.title %></h3>
+              <p><%= article.resume %></p>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
   <br>
