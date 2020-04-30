@@ -46,19 +46,15 @@
     <div id="header"></div> <!-- to draw a horizontal line -->
   </div>
   <div class ="articles">
-    <div class= "article">
-      <% @articles.each do |work| %>
-        <%= link_to articles_path do %>
-          <div class="article-top">
-            <%= cl_image_tag article.cover.key, class: "cover"%>
-            <div class="article-bottom">
+      <% @articles.each do |article| %>
+        <div class= "article">
+          <%= link_to articles_path do %>
+              <%= cl_image_tag article.cover.key%>
               <h3><%= article.title %></h3>
               <p><%= article.resume %></p>
-            </div>
-          </div>
-        <% end %>
+          <% end %>
+        </div>
       <% end %>
-    </div>
   </div>
   <br>
   <div class= "rubrique">
@@ -79,7 +75,7 @@
     </div>
     <div class= "presentation-right">
       <div class= "top">
-        <img src="assets/devanture.jpg" alt="" />
+        <img src="assets/devanture.jpg" alt="" style='height: 200px; width: 200px;'/>
       </div>
       <div class= "bottom">
         <img src="assets/plan.jpg" alt="" />
