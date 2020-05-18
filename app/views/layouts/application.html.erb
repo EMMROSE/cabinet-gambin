@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CabinetGambin</title>
-    <meta name="description" content="Avocat à la cour">
+    <title>Gamblin Avocat</title>
+    <meta name="description" content="Avocat au barreau de Cherbourg">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= favicon_link_tag 'favicon.ico'%>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -14,9 +14,9 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <%= render 'shared/banner' %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
+    <%= render 'shared/footer' %>
   </body>
 </html>

@@ -1,84 +1,82 @@
-  <div class= "specialities">
+    <%= render 'shared/banner' %>
+  <div class="rubrique">
+    <h2 class="title_formule">Mes spécialités</h2>
     <br>
-    <h1>Mes spécialités</h1><br>
-    <div class= "speciality">
+  </div>
+  <div class= "cards">
+    <div class= "card">
       <img src="assets/pen.png" alt="">
       <h3>Droit de la famille</h3>
-      <p>Divorce</p>
-      <p>Sortie d’indivision</p>
-      <p>Succession</p>
-      <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
-      <p>Pensions alimentaires</p>
-      <p>Adoption</p>
+<!--       <div class= "speciality">
+        <p>Divorce</p>
+        <p>Sortie d’indivision</p>
+        <p>Succession</p>
+        <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
+        <p>Pensions alimentaires</p>
+        <p>Adoption</p>
+      </div> -->
     </div>
-    <div class= "speciality">
+    <div class= "card">
       <img src="assets/people.png" alt="">
       <h3>Droit civil</h3>
-      <p>Action en paiement</p>
-      <p>Action en responsabilité</p>
-      <p>Immobilier et construction</p>
-      <p>Baux d’habitation (paiement, expulsion, réparation locatives)</p>
-      <p>Doir bancaire</p>
-      <p>Droit de la consommation</p>
-      <p>Surendettement</p>
-      <p>Préjudice corporel</p>
+      <!-- <div class= "speciality">
+        <p>Action en paiement</p>
+        <p>Action en responsabilité</p>
+        <p>Immobilier et construction</p>
+        <p>Baux d’habitation (paiement, expulsion, réparation locatives)</p>
+        <p>Doir bancaire</p>
+        <p>Droit de la consommation</p>
+        <p>Surendettement</p>
+        <p>Préjudice corporel</p>
+      </div> -->
     </div>
-    <div class= "speciality">
+    <div class= "card">
       <img src="assets/court.png" alt="">
       <h3>Droit pénal</h3>
-      <p>Tribunal de police, Tribunal correctionnel et Cour d’assise</p>
-      <p>Droit routier</p>
-      <p>Garde à vue</p>
-      <p>Ordonnance et composition pénale</p>
-      <p>Assistance à victime et auteur d’infraction</p>
+      <!-- <div class= "speciality">
+        <p>Tribunal de police, Tribunal correctionnel et Cour d’assise</p>
+        <p>Droit routier</p>
+        <p>Garde à vue</p>
+        <p>Ordonnance et composition pénale</p>
+        <p>Assistance à victime et auteur d’infraction</p>
+      </div> -->
     </div>
-    <div class= "speciality">
+    <div class= "card">
       <img src="assets/court.png" alt="">
       <h3>Droit commercial</h3>
-      <p>Action en paiement</p>
-      <p>Procédure collective (sauvegarde, redressement et liquidation judiciaire) en l’absence de salarié</p>
-      <p>Baux commerciaux</p>
+<!--  <div class= "speciality">
+        <p>Action en paiement</p>
+        <p>Procédure collective (sauvegarde, redressement et liquidation judiciaire) en l’absence de salarié</p>
+        <p>Baux commerciaux</p>
+      </div> -->
     </div>
   </div>
-  <br>
-  <div class= "rubrique">
-    <h1>Actualités</h1>
-    <div id="header"></div> <!-- to draw a horizontal line -->
+
+  <div class= "presentation">
+    <div class= "presentation-top">
+      <img src="assets/devanture.jpg" alt=""/>
+      <img src="assets/profil.jpg" alt="" id="profil-picture"/>
+      <%= link_to profil_path do %>
+        <h5 id="profil-title">Profil</h5>
+      <% end %>
+    </div>
+    <div class= "presentation-bottom">
+      <img src="assets/plan.jpg" alt="" />
+    </div>
   </div>
-  <div class ="articles">
+
+  <div class= "rubrique">
+    <h2 class="title_formule">Actualités</h2>
+  </div>
+  <div class ="cards">
       <% @articles.each do |article| %>
         <div class= "article">
-          <%= link_to articles_path do %>
-              <%= cl_image_tag article.cover.key%>
-              <h3><%= article.title %></h3>
-              <p><%= article.resume %></p>
+          <%= cl_image_tag article.cover.key%>
+          <h5><%= article.title %></h5>
+          <p><%= article.resume %></p>
+          <%= link_to article_path(article) do %>
+            <p id="button-lire">lire</p>
           <% end %>
         </div>
       <% end %>
-  </div>
-  <br>
-  <div class= "rubrique">
-    <h1>présentation</h1>
-    <div id="header"></div> <!-- to draw a horizontal line -->
-  </div>
-  <div class= "presentation">
-    <div class= "presentation-left">
-      <div class= "top">
-        <img src="assets/profil.jpg" alt="" />
-      </div>
-      <div class= "bottom">
-        <h3>Profil</h3>
-        <p>Diplomé de l'université de Caen</p>
-        <p>Barreaux</p>
-        <p>Ceinture noire en blague</p>
-      </div>
-    </div>
-    <div class= "presentation-right">
-      <div class= "top">
-        <img src="assets/devanture.jpg" alt="" style='height: 200px; width: 200px;'/>
-      </div>
-      <div class= "bottom">
-        <img src="assets/plan.jpg" alt="" />
-      </div>
-    </div>
   </div>

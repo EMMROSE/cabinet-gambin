@@ -1,10 +1,14 @@
-
+<div class="articles-index" style="margin-top: 8vh;">
 <% @articles.each do |article| %>
-  <div class= "article">
-    <%= link_to article_path(article) do %>
-        <%= cl_image_tag article.cover.key%>
-        <h3><%= article.title %></h3>
-        <p><%= article.resume %></p>
-    <% end %>
+  <div class= "article-index">
+    <%= cl_image_tag article.cover.key%>
+    <div class= "article-index-text">
+      <h3><%= article.title %></h3>
+      <p><%= article.resume %></p>
+      <%= link_to article_path(article) do %>
+        <p id="button-lire">lire</p>
+      <% end %>
+    </div>
   </div>
 <% end %>
+</div>
