@@ -6,7 +6,7 @@
   <div class= "cards">
     <%= link_to domaine_path(anchor: 'famille') do %>
     <div class= "card">
-      <img src="assets/pen.png" alt="">
+      <img src="assets/family.png" alt="">
       <h3>Droit de la famille</h3>
 <!--       <div class= "speciality">
         <p>Divorce</p>
@@ -20,7 +20,7 @@
     <% end %>
     <%= link_to domaine_path(anchor: 'civil') do %>
     <div class= "card">
-      <img src="assets/people.png" alt="">
+      <img src="assets/pen.png" alt="">
       <h3>Droit civil</h3>
       <!-- <div class= "speciality">
         <p>Action en paiement</p>
@@ -49,7 +49,7 @@
     <% end %>
     <%= link_to domaine_path(anchor: 'commercial') do %>
     <div class= "card">
-      <img src="assets/court.png" alt="">
+      <img src="assets/business.png" alt="">
       <h3>Droit commercial</h3>
 <!--  <div class= "speciality">
         <p>Action en paiement</p>
@@ -65,16 +65,19 @@
       <img src="assets/devanture.jpg" alt=""/>
       <img src="assets/tib.jpg" alt="" id="profil-picture"/>
       <%= link_to profil_path do %>
-        <h5 id="profil-title">Profil</h5>
+        <h5 id="profil-title">mon profil</h5>
       <% end %>
     </div>
     <div class= "presentation-bottom">
       <img src="assets/plan.jpg" alt="" />
+      <%= link_to cabinet_path do %>
+        <button class="nav-button" id="cabinet-button">le Cabinet</h5>
+      <% end %>
     </div>
   </div>
 
   <div class= "rubrique">
-    <h2 class="title_formule">Actualités</h2>
+    <h2 class="title_actu">Actualités</h2>
   </div>
   <div class ="cards">
       <% @articles.each do |article| %>

@@ -20,9 +20,25 @@
     position: absolute;
     height: 4px;
     background-color: white;
-    width: 75%;
+    width: 160px;
     bottom: 0px;
-    left: 28px;
+    left: 90px;
+  }
+  .title_actu {
+      display: block;
+      margin: 20px 0 30px 0;
+      line-height: normal;
+      position: relative;
+  }
+
+  .title_actu::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 120px;
+    bottom: 0px;
+    left: 12px;
   }
 }
 

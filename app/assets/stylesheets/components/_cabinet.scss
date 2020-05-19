@@ -1,10 +1,14 @@
-.navbar-lewagon {
-  justify-content: space-between;
+.cabinet {
+  margin-top: 11vh;
+  padding: 16px;
+  color: white;
+  p {text-align: justify; }
+  // LINEAR GRADIENT
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 52px;
+  img {
+    height: 30vh;
+    width: 100%;
+  }
 }
