@@ -4,17 +4,14 @@
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   justify-content: space-between;
-  height: 190px;
+  height: 150px;
   padding: 0px 16px;
   color: rgba(0,0,0,0.3);
-}
-.footer-links {
-  flex-basis: 56%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  img {
-    width: 40px;
+  position: relative;
+  p {
+    text-align: left;
+    color: white;
+    font-weight: bold;
   }
   a {
     color: white;
@@ -22,21 +19,13 @@
     text-decoration: none;
     font-size: 24px;
     padding: 0px 10px;
-    margin-bottom: 4px;
+    position: absolute;
+    bottom: 2px; right: 116px;
   }
-  .footer-links-top {
-    img {
-      height: 48px;
-      width: 48px;
-    }
-  }
-}
-
-.footer-address {
-  flex-grow: 1;
-  p {
-    text-align: left;
-    color: white;
-    font-weight: normal;
+  img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 2px; right: 2px;
   }
 }

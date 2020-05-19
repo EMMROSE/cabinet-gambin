@@ -4,6 +4,7 @@
     <br>
   </div>
   <div class= "cards">
+    <%= link_to domaine_path(anchor: 'famille') do %>
     <div class= "card">
       <img src="assets/pen.png" alt="">
       <h3>Droit de la famille</h3>
@@ -16,6 +17,8 @@
         <p>Adoption</p>
       </div> -->
     </div>
+    <% end %>
+    <%= link_to domaine_path(anchor: 'civil') do %>
     <div class= "card">
       <img src="assets/people.png" alt="">
       <h3>Droit civil</h3>
@@ -30,6 +33,8 @@
         <p>Préjudice corporel</p>
       </div> -->
     </div>
+    <% end %>
+    <%= link_to domaine_path(anchor: 'penal') do %>
     <div class= "card">
       <img src="assets/court.png" alt="">
       <h3>Droit pénal</h3>
@@ -41,6 +46,8 @@
         <p>Assistance à victime et auteur d’infraction</p>
       </div> -->
     </div>
+    <% end %>
+    <%= link_to domaine_path(anchor: 'commercial') do %>
     <div class= "card">
       <img src="assets/court.png" alt="">
       <h3>Droit commercial</h3>
@@ -50,12 +57,13 @@
         <p>Baux commerciaux</p>
       </div> -->
     </div>
+    <% end %>
   </div>
 
   <div class= "presentation">
     <div class= "presentation-top">
       <img src="assets/devanture.jpg" alt=""/>
-      <img src="assets/profil.jpg" alt="" id="profil-picture"/>
+      <img src="assets/tib.jpg" alt="" id="profil-picture"/>
       <%= link_to profil_path do %>
         <h5 id="profil-title">Profil</h5>
       <% end %>
