@@ -10,5 +10,29 @@
   img {
     height: 30vh;
     width: 100%;
+    margin-bottom: 32px;
+    border-radius: 6px;
+  }
+}
+
+.buttons-cabinet {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cabinet {
+    margin-top: 10vh;
+    padding: 48px;
+  img {
+    height: 30vh;
+    width: 50%;
+    margin-bottom: 32px;
+  }
+  .buttons-cabinet {
+    width: 50%;
+  }
   }
 }

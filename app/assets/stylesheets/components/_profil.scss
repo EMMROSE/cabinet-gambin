@@ -6,7 +6,7 @@
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .profil-top {
-  height: 36vh;
+  height: 46vh;
   padding: 32px 8px 16px 8px;
   display: flex;
   flex-direction: space-between;
@@ -17,7 +17,7 @@
   height: 4px;
   background-color: white;
   width: 33%;
-  top: 340px;
+  top: 420px;
   left: 33%;
 }
 .profil-top-left {
@@ -56,7 +56,7 @@
   height: 4px;
   background-color: white;
   width: 33%;
-  top: 776px;
+  top: 856px;
   left: 33%;
 }
 
@@ -66,10 +66,15 @@
   height: 4px;
   background-color: white;
   width: 33%;
-  top: 1260px;
+  top: 1340px;
   left: 33%;
 }
-
+.buttons-profil {
+  margin-top: 16px;
+  width: 163%;
+  display: flex;
+  justify-content: space-between;
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 
@@ -90,6 +95,9 @@
   .profil-top {
     height: 50vh;
     padding: 40px 40px 16px 40px;
+    .buttons-profil {
+      width: 50%;
+    }
   }
   .profil-top-left {
     width: 45%;

@@ -21,6 +21,9 @@
   text-align: center;
 }
 
+#cabinet-bis-button {
+}
+
 #profil-button {
   font-size: 14px;
   width: 36%;
@@ -61,6 +64,12 @@
     position: absolute;
     bottom: 80px;
     right: 8px;
+  }
+  #cabinet-bis-button {
+    margin-top: 20px;
+    font-size: 24px;
+    width: 50%;
+    text-align: center;
   }
 }
 
