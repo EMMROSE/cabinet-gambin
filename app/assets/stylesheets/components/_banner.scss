@@ -19,7 +19,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 64px;
   font-weight: bold;
-  position: relative;
 }
 
 .banner h3 {
@@ -30,28 +29,21 @@
 }
 
 .banner h4 {
-    font-size: 24px;
+    font-size: 32px;
     color: white;
     opacity: .7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    text-align: left;
     margin-bottom: inherit;
-    position:absolute;
-    top: -32px; left: 342px;
   }
 
   // Smallest device
   @media (min-width: 100px) and (max-width: 576px) {
     .banner h4 {
-      top: -18px;
-      left: 34px;
     }
   }
   // // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 991px){
     .banner h4 {
-      top: -18px;
-      left: 130px;
     }
   }
   // // Medium devices (tablets, 768px and up)

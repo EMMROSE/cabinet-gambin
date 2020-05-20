@@ -1,7 +1,8 @@
 .footer {
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #000000;  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: white;
   display: flex;
   justify-content: space-between;
   height: 150px;
@@ -10,11 +11,12 @@
   position: relative;
   p {
     text-align: left;
-    color: white;
+    color: #333333;
     font-weight: bold;
+    font-size: 0.7rem;
   }
   a {
-    color: white;
+    color: black;
     opacity: 0.8;
     text-decoration: none;
     font-size: 24px;
@@ -33,15 +35,18 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .footer {
-    padding: 24px 72px 16px 64px;
+    padding: 24px 72px 16px 36px;
+    p {font-size: 1.0rem;}
     img {
-      top: 32px; right: 80px;
+      width: 100px;
+      height: 100px;
+      top: 24px; right: 36px;
     }
     a {
       font-size: 32px;
       padding: 0px 0px;
       position: absolute;
-      bottom: 8px; right: 80px;
+      bottom: 8px; right: 36px;
     }
   }
 }

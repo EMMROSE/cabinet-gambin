@@ -21,6 +21,8 @@
   left: 33%;
 }
 .profil-top-left {
+  display: flex;
+  justify-content: flex-end;
   width: 45%;
   img {
     height: 160px;
@@ -57,9 +59,7 @@
   top: 776px;
   left: 33%;
 }
-.profil-bottom-second {
 
-}
 .profil-bottom-second::after {
   content: '';
   position: absolute;
@@ -68,4 +68,73 @@
   width: 33%;
   top: 1260px;
   left: 33%;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .profil-top {
+    height: 50vh;
+    padding: 40px 40px 16px 40px;
+  }
+  .profil-top-left {
+    width: 45%;
+    img {
+      height: 220px;
+      width: 50%;
+      border-radius: 10%;
+      box-shadow: 0px 0px 7px rgba(255,255,255,0.6);
+    }
+  }
+  .profil-top::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    top: 360px;
+    left: 33%;
+  }
+  .profil-bottom {
+    padding: 20px 40px 20px 40px;
+  }
+
+  .profil-bottom-first::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    top: 614px;
+    left: 33%;
+  }
+  .profil-bottom-second {
+    padding-top: 20px;
+  }
+
+  .profil-bottom-second::after {
+    top: 870px;;
+  }
+  .profil-bottom-third {
+    padding-top: 20px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
 }

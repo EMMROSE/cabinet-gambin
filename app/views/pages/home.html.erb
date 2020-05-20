@@ -33,7 +33,7 @@
   <div class="cols">
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/family2.jpg)">
+            <div class="front" style="background-image: url(assets/family2.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit de la famille</p>
               </div>
@@ -46,13 +46,14 @@
                 <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
                 <p>Pensions alimentaires</p>
                 <p>Adoption</p>
+                <p>...</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/civil.jpg)">
+            <div class="front" style="background-image: url(assets/civil.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit civil</p>
               </div>
@@ -67,13 +68,14 @@
                 <p>Droit de la consommation</p>
                 <p>Surendettement</p>
                 <p>Préjudice corporel</p>
+                <p>...</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/hammer.jpg)">
+            <div class="front" style="background-image: url(assets/hammer.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit pénal</p>
               </div>
@@ -85,13 +87,14 @@
                 <p>Garde à vue</p>
                 <p>Ordonnance et composition pénale</p>
                 <p>Assistance à victime et auteur d’infraction</p>
+                <p>...</p>
               </div>
             </div>
           </div>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/commercial.jpg)">
+            <div class="front" style="background-image: url(assets/commercial.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit commercial</p>
               </div>
@@ -101,6 +104,7 @@
                 <p>Action en paiement</p>
                 <p>Procédure collective (sauvegarde, redressement et liquidation judiciaire) en l’absence de salarié</p>
                 <p>Baux commerciaux</p>
+                <p>...</p>
               </div>
             </div>
           </div>
@@ -128,9 +132,7 @@
           <%= cl_image_tag article.cover.key%>
           <h5><%= article.title %></h5>
           <p><%= article.resume %></p>
-          <%= link_to article_path(article) do %>
-            <p id="button-lire">lire</p>
-          <% end %>
+          <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button"%>
         </div>
       <% end %>
   </div>

@@ -30,6 +30,13 @@
   right: 16px;
 }
 
+#lire-button {
+  position: absolute;
+  bottom: 8px;
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 
