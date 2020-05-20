@@ -111,15 +111,11 @@
     <div class= "presentation-top">
       <img src="assets/devanture.jpg" alt=""/>
       <img src="assets/tib.jpg" alt="" id="profil-picture"/>
-      <%= link_to profil_path do %>
-        <h5 id="profil-title">MON PROFIL</h5>
-      <% end %>
+      <%= link_to "MON PROFIL", profil_path, class: "nav-button", id:"profil-button"%>
     </div>
     <div class= "presentation-bottom">
       <img src="assets/plan.jpg" alt="" />
-      <%= link_to cabinet_path do %>
-        <button class="nav-button" id="cabinet-button">LE CABINET</h5>
-      <% end %>
+      <%= link_to "LE CABINET", cabinet_path, class: "nav-button", id:"cabinet-button"%>
     </div>
   </div>
 

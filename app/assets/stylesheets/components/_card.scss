@@ -59,18 +59,7 @@
     width: auto;
     border-radius: 50%;
     position: absolute;
-    top: 2px; right: 13px;
-  }
-  #profil-title {
-    position: absolute;
-    bottom: 56px;
-    right: 8px;
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 4px 4px 4px 4px;
-    border-radius: 4px;
-    color: #2B2B2B;
-    font-weight: bold;
+    top: 2px; right: 18px;
   }
   img {
     height: 100%;
@@ -134,12 +123,12 @@
       height: 100%;
       width: 100%;
     }
-    #profil-title {bottom: 112px;}
+    #profil-picture { right: 28px;}
   }
   .presentation-bottom {
     height: 107%;
     width: 100%;
-    img { padding-left: 16px;}
+    img { padding-left: 32px;}
   }
 }
 
