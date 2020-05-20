@@ -8,58 +8,105 @@
     <div class= "card">
       <img src="assets/family.png" alt="">
       <h3>Droit de la famille</h3>
-<!--       <div class= "speciality">
-        <p>Divorce</p>
-        <p>Sortie d’indivision</p>
-        <p>Succession</p>
-        <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
-        <p>Pensions alimentaires</p>
-        <p>Adoption</p>
-      </div> -->
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'civil') do %>
     <div class= "card">
       <img src="assets/pen.png" alt="">
       <h3>Droit civil</h3>
-      <!-- <div class= "speciality">
-        <p>Action en paiement</p>
-        <p>Action en responsabilité</p>
-        <p>Immobilier et construction</p>
-        <p>Baux d’habitation (paiement, expulsion, réparation locatives)</p>
-        <p>Droit bancaire</p>
-        <p>Droit de la consommation</p>
-        <p>Surendettement</p>
-        <p>Préjudice corporel</p>
-      </div> -->
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'penal') do %>
     <div class= "card">
       <img src="assets/court.png" alt="">
       <h3>Droit pénal</h3>
-      <!-- <div class= "speciality">
-        <p>Tribunal de police, Tribunal correctionnel et Cour d’assise</p>
-        <p>Droit routier</p>
-        <p>Garde à vue</p>
-        <p>Ordonnance et composition pénale</p>
-        <p>Assistance à victime et auteur d’infraction</p>
-      </div> -->
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'commercial') do %>
     <div class= "card">
       <img src="assets/business.png" alt="">
       <h3>Droit commercial</h3>
-<!--  <div class= "speciality">
-        <p>Action en paiement</p>
-        <p>Procédure collective (sauvegarde, redressement et liquidation judiciaire) en l’absence de salarié</p>
-        <p>Baux commerciaux</p>
-      </div> -->
     </div>
     <% end %>
   </div>
-
+  <!-- DISPLAY FLIPCARD WHEN SCREEN > 992px -->
+  <div class="cols">
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(assets/family2.jpg)">
+              <div class="inner">
+                <p>Droit de la famille</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Divorce</p>
+                <p>Sortie d’indivision</p>
+                <p>Succession</p>
+                <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
+                <p>Pensions alimentaires</p>
+                <p>Adoption</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(assets/civil.jpg)">
+              <div class="inner">
+                <p>Droit civil</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Action en paiement</p>
+                <p>Action en responsabilité</p>
+                <p>Immobilier et construction</p>
+                <p>Baux d’habitation (paiement, expulsion, réparation locatives)</p>
+                <p>Droit bancaire</p>
+                <p>Droit de la consommation</p>
+                <p>Surendettement</p>
+                <p>Préjudice corporel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(assets/hammer.jpg)">
+              <div class="inner">
+                <p>Droit pénal</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Tribunal de police, Tribunal correctionnel et Cour d’assise</p>
+                <p>Droit routier</p>
+                <p>Garde à vue</p>
+                <p>Ordonnance et composition pénale</p>
+                <p>Assistance à victime et auteur d’infraction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <div class="container">
+            <div class="front" style="background-image: url(assets/commercial.jpg)">
+              <div class="inner">
+                <p>Droit commercial</p>
+              </div>
+            </div>
+            <div class="back">
+              <div class="inner">
+                <p>Action en paiement</p>
+                <p>Procédure collective (sauvegarde, redressement et liquidation judiciaire) en l’absence de salarié</p>
+                <p>Baux commerciaux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <!--   END OF FLIPCARD SECTION -->
   <div class= "presentation">
     <div class= "presentation-top">
       <img src="assets/devanture.jpg" alt=""/>
@@ -79,7 +126,7 @@
   <div class= "rubrique">
     <h2 class="title_actu">Actualités</h2>
   </div>
-  <div class ="cards">
+  <div class ="articles">
       <% @articles.each do |article| %>
         <div class= "article">
           <%= cl_image_tag article.cover.key%>

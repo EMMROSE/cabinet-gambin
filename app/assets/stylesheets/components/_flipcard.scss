@@ -13,8 +13,8 @@
 }
 
 .col{
-  width: 300px;
-  margin: 0.8rem;
+  width: 20%;
+  margin: 0.4rem;
   cursor: pointer;
 }
 
@@ -41,8 +41,8 @@
   height: auto;
   border-radius: 10px;
   color: #fff;
-  font-size: 1.15rem;
-  width: 234px;
+  font-size: 1.11rem;
+  width: 236px;
 }
 
 .back{
@@ -80,7 +80,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 107%;
 }
 
 .inner{
@@ -153,3 +153,23 @@
   font-family: 'Montserrat';
   font-weight: 300;
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 991px) {
+  .cols {display: none}
+}
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+
+// }
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//  }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+// }

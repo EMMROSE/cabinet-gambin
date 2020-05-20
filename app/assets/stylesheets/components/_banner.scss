@@ -1,7 +1,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 100px 0 40px 0;
+  padding: 150px 0 40px 0;
   text-align: center;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -19,6 +19,7 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 64px;
   font-weight: bold;
+  position: relative;
 }
 
 .banner h3 {
@@ -29,12 +30,41 @@
 }
 
 .banner h4 {
-  font-size: 24px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  text-align: left;
-  margin-left: 56px;
-  margin-bottom: inherit;
-}
+    font-size: 24px;
+    color: white;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-align: left;
+    margin-bottom: inherit;
+    position:absolute;
+    top: -32px; left: 342px;
+  }
 
+  // Smallest device
+  @media (min-width: 100px) and (max-width: 576px) {
+    .banner h4 {
+      top: -18px;
+      left: 34px;
+    }
+  }
+  // // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 991px){
+    .banner h4 {
+      top: -18px;
+      left: 130px;
+    }
+  }
+  // // Medium devices (tablets, 768px and up)
+  // @media (min-width: 768px) {
+  //  }
+
+  // // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .banner h1 {
+      margin-bottom: 8px;
+    }
+  }
+
+  // // Extra large devices (large desktops, 1200px and up)
+  // @media (min-width: 1200px) {
+  //

@@ -42,4 +42,14 @@
   }
 }
 
-
+// // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    .rubrique {
+      .title_formule::after {
+        bottom: -8px;
+      }
+      .title_actu::after {
+        bottom: -8px;
+      }
+    }
+  }

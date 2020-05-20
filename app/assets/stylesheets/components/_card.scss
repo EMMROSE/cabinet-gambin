@@ -92,11 +92,6 @@
   }
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
@@ -104,6 +99,9 @@
     grid-template-columns: 1fr 1fr;
   }
   .speciality {display: none;}
+  .articles {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -123,7 +121,25 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: none;
+  }
+  .presentation {
+    height: 60vh;
+    width: 100%;
+    flex-direction: row;
+  }
+  .presentation-top {
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    #profil-title {bottom: 112px;}
+  }
+  .presentation-bottom {
+    height: 107%;
+    width: 100%;
+    img { padding-left: 16px;}
   }
 }
 
