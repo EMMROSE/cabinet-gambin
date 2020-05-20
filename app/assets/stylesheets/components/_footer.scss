@@ -15,7 +15,7 @@
   }
   a {
     color: white;
-    opacity: 0.15;
+    opacity: 0.8;
     text-decoration: none;
     font-size: 24px;
     padding: 0px 10px;
@@ -27,5 +27,21 @@
     height: 80px;
     position: absolute;
     top: 2px; right: 2px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .footer {
+    padding: 24px 72px 16px 64px;
+    img {
+      top: 32px; right: 80px;
+    }
+    a {
+      font-size: 32px;
+      padding: 0px 0px;
+      position: absolute;
+      bottom: 8px; right: 80px;
+    }
   }
 }
