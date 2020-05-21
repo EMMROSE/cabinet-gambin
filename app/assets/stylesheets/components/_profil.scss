@@ -33,7 +33,7 @@
 }
 
 .profil-top-right {
-  width: 70%;
+  width: 63%;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -78,6 +78,9 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 375px) {
+  .profil {
+    margin-top: 9vh;
+  }
   .buttons-profil {
     margin-top: 16px;
     width: 100%;

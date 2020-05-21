@@ -21,6 +21,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.section-cabinet {
+  padding: 16px;
+  border: solid 2px white;
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.6);
+  max-width: 832px;
+  i {margin-left: 20%; margin-bottom: 5%;font-weight: bold; font-size: 24px;}
+  p {text-align: left; }
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cabinet {

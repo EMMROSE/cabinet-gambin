@@ -5,9 +5,7 @@
     <div class= "article-index-text">
       <h3><%= article.title %></h3>
       <p><%= article.resume %></p>
-      <%= link_to article_path(article) do %>
-        <p id="button-lire">lire</p>
-      <% end %>
+      <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button-index"%>
     </div>
   </div>
 <% end %>
