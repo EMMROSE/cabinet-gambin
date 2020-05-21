@@ -75,6 +75,23 @@
   display: flex;
   justify-content: space-between;
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 375px) {
+  .buttons-profil {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .profil-top {
+    height: 60vh;
+  }
+  #button-profil-top {
+    font-size: 0.7rem;
+    margin-right: 16px;
+  }
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
 
