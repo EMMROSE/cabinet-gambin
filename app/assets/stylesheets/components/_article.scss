@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   height: 36vh;
-  width: 20vh;
+  width: 100%;
   background-color: transparent;
   border: solid 1px white;
   border-radius: 4px;
@@ -100,11 +100,27 @@
   }
 }
 
-
+// Smallest device (iphone 5)
+@media (min-width: 100px) and (max-width: 320px) {
+  .article {
+    #lire-button {
+      position: absolute;
+      bottom: 5px;
+      font-size: 7px;
+      padding: 4px 10px;
+    }
+    h5 {
+      font-size: 0.9rem;
+    }
+    p {
+      text-align: center; margin-bottom: 0px; font-size: 0.6rem;
+    }
+  }
+}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .articles {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
