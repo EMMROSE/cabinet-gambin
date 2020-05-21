@@ -1,1 +1,13 @@
-<%= render 'form_article' %>
+<div class="container form-container" style="margin-top: 11vh;">>
+  <%=  simple_form_for(@article) do |f| %>
+    <div class="form-top">
+      <%= f.input :title, label: 'Titre', placeholder: "Titre pour l'article" %>
+      <%= f.input :resume, label: 'Résumé', placeholder: "Une accroche ou un résumé en quelques mots" %>
+      <%= f.input :content, label: "Rédaction de l'article", as: :text, placeholder: "Le contenu de l'article." %>
+      <%= f.input :cover, label: 'Ajoutez une illustration (un fichier trop lourd [taille > 500 KO] peut impacter la fluidité du site)', as: :file %>
+     </div>
+     <div class="form-button">
+      <%= f.submit "Editer l'article", class: 'nav-button' %>
+     </div>
+  <% end %>
+</div>
