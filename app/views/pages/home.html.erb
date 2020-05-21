@@ -6,25 +6,25 @@
   <div class= "cards">
     <%= link_to domaine_path(anchor: 'famille') do %>
     <div class= "card">
-      <img src="assets/family.png" alt="">
+      <img src="../assets/family.png" alt="">
       <h3>Droit de la famille</h3>
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'civil') do %>
     <div class= "card">
-      <img src="assets/pen.png" alt="">
+      <img src="../assets/pen.png" alt="">
       <h3>Droit civil</h3>
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'penal') do %>
     <div class= "card">
-      <img src="assets/court.png" alt="">
+      <img src="../assets/court.png" alt="">
       <h3>Droit pénal</h3>
     </div>
     <% end %>
     <%= link_to domaine_path(anchor: 'commercial') do %>
     <div class= "card">
-      <img src="assets/business.png" alt="">
+      <img src="../assets/business.png" alt="">
       <h3>Droit commercial</h3>
     </div>
     <% end %>
@@ -33,7 +33,7 @@
   <div class="cols">
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/family2.jpg); filter: brightness(1.75);">
+            <div class="front" style="background-image: url(../assets/family2.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit de la famille</p>
               </div>
@@ -53,7 +53,7 @@
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/civil.jpg); filter: brightness(1.75);">
+            <div class="front" style="background-image: url(../assets/civil.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit civil</p>
               </div>
@@ -75,7 +75,7 @@
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/hammer.jpg); filter: brightness(1.75);">
+            <div class="front" style="background-image: url(../assets/hammer.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit pénal</p>
               </div>
@@ -94,7 +94,7 @@
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
           <div class="container">
-            <div class="front" style="background-image: url(assets/commercial.jpg); filter: brightness(1.75);">
+            <div class="front" style="background-image: url(../assets/commercial.jpg); filter: brightness(1.75);">
               <div class="inner">
                 <p>Droit commercial</p>
               </div>
@@ -113,12 +113,12 @@
   <!--   END OF FLIPCARD SECTION -->
   <div class= "presentation">
     <div class= "presentation-top">
-      <img src="assets/devanture.jpg" alt=""/>
-      <img src="assets/tib.jpg" alt="" id="profil-picture"/>
+      <img src="../assets/devanture.jpg" alt=""/>
+      <img src="../assets/tib.jpg" alt="" id="profil-picture"/>
       <%= link_to "MON PROFIL", profil_path, class: "nav-button", id:"profil-button"%>
     </div>
     <div class= "presentation-bottom">
-      <img src="assets/plan.jpg" alt="" />
+      <img src="../assets/plan.jpg" alt="" />
       <%= link_to "LE CABINET", cabinet_path, class: "nav-button", id:"cabinet-button"%>
     </div>
   </div>
