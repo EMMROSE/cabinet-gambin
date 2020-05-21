@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'profil', to: 'pages#profil'
   get 'domaine', to: 'pages#domaine'
   get 'cabinet', to: 'pages#cabinet'
+  get 'admin', to: 'pages#admin'
 
   resources :articles
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

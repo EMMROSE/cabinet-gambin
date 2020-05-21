@@ -1,0 +1,26 @@
+<div class="admin-page" style="margin-top: 11vh;">
+  <br>
+  <%= link_to "Se déconnecter", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+  <br>
+  <%= link_to "Nouvel article", new_article_path, class: "nav-button" %>
+  <br>
+  <h3>Vos articles</h3>
+  <div class="articles-index" style="margin-top: 11vh;">
+  <% @articles.each do |article| %>
+    <div class= "article-index">
+      <%= cl_image_tag article.cover.key%>
+      <div class= "article-index-text">
+        <h3><%= article.title %></h3>
+        <p><%= article.resume %></p>
+        <%= link_to edit_article_path(article) do %>
+          <i class="fas fa-pencil-alt"></i> Editer
+        <% end %>
+        <%= link_to article_path(article), method: :delete, data: { confirm: "Etes vous sûre ?" } do %>
+          <i class="fas fa-trash"></i>
+        <% end %>
+        <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button-index"%>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

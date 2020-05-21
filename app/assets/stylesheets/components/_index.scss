@@ -13,3 +13,7 @@
 @import "menu";
 @import "navbar";
 @import "profil";
+
+.content-wrapper {
+  min-height: calc(100vh - 70px - 80px);
+}

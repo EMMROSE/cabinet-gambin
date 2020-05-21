@@ -12,8 +12,18 @@ Article.destroy_all
 
 puts '>>>>>> Done!'
 puts '----------------'
+puts 'Destroy all users'
+User.destroy_all
+puts '>>>>>> Done!'
 
+puts '----------------'
+puts 'Creating User'
+puts '----------------'
+@user1 = User.new(email: 'gamblin.thibault@avocat-conseil.fr', password:'Blagarreur!')
+@user1.save!
+puts '>>>>>> Done!'
 
+puts '----------------'
 puts 'Creating articles'
 puts '----------------'
 
