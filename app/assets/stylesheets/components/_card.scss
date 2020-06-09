@@ -53,14 +53,6 @@
   height: 50%;
   width: 100%;
   margin-bottom: 16px;
-  position: relative;
-  #profil-picture {
-    height: 172px;
-    width: auto;
-    border-radius: 50%;
-    position: absolute;
-    top: 2px; right: 20px;
-  }
   img {
     height: 100%;
     width: 100%;
@@ -75,7 +67,7 @@
   height: 50%;
   width: 100%;
   img {
-    height: 70%;
+    height: 100%;
     width: 100%;
     border-radius: 4px;
   }
@@ -163,7 +155,7 @@
     #profil-picture { right: 28px;}
   }
   .presentation-bottom {
-    height: 107%;
+    height: 100%;
     width: 100%;
     img { padding-left: 32px;}
   }

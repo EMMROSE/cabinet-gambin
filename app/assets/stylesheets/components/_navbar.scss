@@ -10,6 +10,12 @@
   width: 52px;
 }
 
+.middle-item {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .navbar-lewagon {

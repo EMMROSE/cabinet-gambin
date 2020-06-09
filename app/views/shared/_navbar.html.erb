@@ -2,7 +2,16 @@
   <%= link_to root_path, class: "navbar-brand" do %>
     <%= image_tag "logotransparent.png" %>
     <% end %>
-
+  <div class="middle-item">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "MON PARCOURS", profil_path, class: "nav-button" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "MON CABINET", cabinet_path, class: "nav-button" %>
+      </li>
+  </ul>
+  </div>
   <div>
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
