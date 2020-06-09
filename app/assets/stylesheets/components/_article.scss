@@ -5,14 +5,14 @@
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
-  padding: 16px;
+  grid-gap: 12px;
+  padding: 12px;
 }
 .article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 36vh;
+  height: 44vh;
   width: 100%;
   background-color: transparent;
   border: solid 1px white;
