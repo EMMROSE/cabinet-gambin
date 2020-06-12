@@ -73,7 +73,7 @@
   margin-top: 16px;
   width: 163%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 // Smallest device
@@ -118,6 +118,16 @@
     .buttons-profil {
       width: 100%;
     }
+  }
+  .profil-top-right {
+    width: 63%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #button-profil-top {
+    margin-right: 16px;
   }
   .profil-top-left {
     width: 45%;

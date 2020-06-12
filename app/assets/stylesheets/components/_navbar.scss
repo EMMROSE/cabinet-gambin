@@ -5,15 +5,20 @@
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+.nav-left {
+  display: flex;
+  flex-direction: row;
+}
 
 .navbar-lewagon .navbar-brand img {
   width: 52px;
 }
-
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
 .middle-item {
   display: flex;
-  flex-direction:row;
-  justify-content: flex-end;
+  align-items: center;
 }
 
 // Smallest device
@@ -22,3 +27,4 @@
     padding: 8px 18px;
   }
 }
+
