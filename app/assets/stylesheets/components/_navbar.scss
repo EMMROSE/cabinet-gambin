@@ -28,3 +28,9 @@
   }
 }
 
+// Medium device
+@media (min-width: 576px) and (max-width: 812px) {
+  .navbar-lewagon {
+    padding: 8px 18px;
+  }
+}
