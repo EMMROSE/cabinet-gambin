@@ -130,6 +130,9 @@
   .articles {
     grid-template-columns: 1fr 1fr;
   }
+  .article {
+    height: 80vh;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -139,6 +142,9 @@
   }
   .article-index {
     width: 40%;
+  }
+  .article {
+    height: 80vh;
   }
 }
 

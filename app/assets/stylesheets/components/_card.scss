@@ -126,12 +126,24 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
+  .card {
+    height: 70vh;
+  }
+  .presentation {
+    height: 160vh;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .card {
+    height: 70vh;
+  }
+  .presentation {
+    height: 160vh;
   }
 }
 
