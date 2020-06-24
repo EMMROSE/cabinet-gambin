@@ -126,7 +126,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+@media (min-width: 560px) {
   .articles {
     grid-template-columns: 1fr 1fr;
   }
