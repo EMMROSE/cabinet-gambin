@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 11vh;
   padding: 24px;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -127,6 +128,13 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 560px) {
+  .articles-index {
+    margin-top: 23vh;
+  }
+  .article-index {
+    height: 45vh;
+    width: 80%;
+  }
   .articles {
     grid-template-columns: 1fr 1fr;
   }
@@ -141,7 +149,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
   .article-index {
-    width: 40%;
+    width: 60%;
   }
   .article {
     height: 80vh;
@@ -150,6 +158,9 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .articles-index {
+    margin-top: 11vh;
+  }
   .articles {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-left: 36px;

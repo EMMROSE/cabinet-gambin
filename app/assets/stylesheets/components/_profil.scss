@@ -49,16 +49,18 @@
 }
 .profil-bottom-first {
   text-align: justify;
+  position: relative;
+  .profil-bottom-first::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    top: 856px;
+    left: 33%;
+  }
 }
-.profil-bottom-first::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background-color: white;
-  width: 33%;
-  top: 856px;
-  left: 33%;
-}
+
 
 .profil-bottom-second::after {
   content: '';
@@ -96,8 +98,25 @@
   }
 }
 // Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-
+@media (min-width: 100px) and (max-width: 812px) {
+  .profil {
+    margin-top: 20vh;
+  }
+  .profil-top {
+    height: 55vh;
+  }
+  .profil-top::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    top: 552px;
+    left: 33%;
+  }
+  #button-profil-top {
+    margin-right: 8px;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)

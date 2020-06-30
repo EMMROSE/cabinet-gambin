@@ -18,7 +18,7 @@
     text-align: left;
     color: #333333;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
     margin-bottom: 0px;
   }
   a {
@@ -68,7 +68,7 @@
   .footer {
     height: 180px;
     padding: 24px 72px 16px 36px;
-    .footer-left p {font-size: 1.0rem;}
+    .footer-left p {font-size: 1.0rem !important;}
     img {
       width: 100px;
       height: 100px;
