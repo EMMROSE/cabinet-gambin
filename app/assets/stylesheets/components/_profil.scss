@@ -1,5 +1,5 @@
 .profil {
-  margin-top: 8vh;
+  margin-top: 13vh;
   color: white;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
@@ -10,15 +10,16 @@
   padding: 32px 8px 16px 8px;
   display: flex;
   flex-direction: space-between;
-}
-.profil-top::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background-color: white;
-  width: 33%;
-  top: 420px;
-  left: 33%;
+  position: relative;
+  .profil-top::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    bottom: 0px;
+    left: 33%;
+  }
 }
 .profil-top-left {
   display: flex;
@@ -46,31 +47,15 @@
   padding: 8px 16px 16px 16px;
   p { margin-bottom: inherit;}
   h3 {font-weight: bold;}
-}
-.profil-bottom-first {
-  text-align: justify;
-  position: relative;
-  .profil-bottom-first::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: white;
-    width: 33%;
-    top: 856px;
-    left: 33%;
+  .profil-bottom-first {
+    text-align: justify;
+  }
+  .profil-bottom-second {
+    text-align: justify;
   }
 }
 
 
-.profil-bottom-second::after {
-  content: '';
-  position: absolute;
-  height: 4px;
-  background-color: white;
-  width: 33%;
-  top: 1340px;
-  left: 33%;
-}
 .buttons-profil {
   margin-top: 16px;
   width: 163%;
@@ -99,11 +84,8 @@
 }
 // Smallest device
 @media (min-width: 100px) and (max-width: 812px) {
-  .profil {
-    margin-top: 20vh;
-  }
   .profil-top {
-    height: 55vh;
+    height: 40vh;
   }
   .profil-top::after {
     content: '';
@@ -111,7 +93,7 @@
     height: 4px;
     background-color: white;
     width: 33%;
-    top: 552px;
+    bottom: 0px;
     left: 33%;
   }
   #button-profil-top {
@@ -163,29 +145,17 @@
     height: 4px;
     background-color: white;
     width: 33%;
-    top: 360px;
+    bottom: 0px;
     left: 33%;
   }
   .profil-bottom {
     padding: 20px 40px 20px 40px;
   }
 
-  .profil-bottom-first::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    background-color: white;
-    width: 33%;
-    top: 614px;
-    left: 33%;
-  }
   .profil-bottom-second {
     padding-top: 20px;
   }
 
-  .profil-bottom-second::after {
-    top: 870px;;
-  }
   .profil-bottom-third {
     padding-top: 20px;
   }

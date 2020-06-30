@@ -14,7 +14,7 @@
     border-radius: 6px;
   }
 }
-
+#phone { margin-left: 37%;}
 .buttons-cabinet {
   margin-top: 16px;
   width: 100%;
@@ -31,13 +31,16 @@
   p {text-align: left; }
 }
 
+#buttonrdv { margin-left: 37%; }
 // Mediuym devices
-@media (min-width: 560px) and (max-width: 815px) {
+@media (min-width: 100px) and (max-width: 815px) {
   .cabinet {
     img {
       height: 70vh;
     }
   }
+  #phone { margin-left: 20%;}
+  #buttonrdv { margin-left: 30%; }
 }
 
 // Large devices (desktops, 992px and up)
