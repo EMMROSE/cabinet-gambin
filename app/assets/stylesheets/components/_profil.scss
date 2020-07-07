@@ -6,7 +6,7 @@
   background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .profil-top {
-  height: 46vh;
+  height: 50vh;
   padding: 32px 8px 16px 8px;
   display: flex;
   flex-direction: space-between;
@@ -64,13 +64,13 @@
 }
 
 // Smallest device
-@media (min-width: 100px) and (max-width: 374px) {
+@media (min-width: 100px) and (max-width: 320px) {
   .profil {
-    margin-top: 11vh;
+    margin-top: 10vh;
   }
   .buttons-profil {
-    margin-top: 16px;
-    width: 100%;
+    margin-top: 20px;
+    width: 120%;
     display: flex;
     justify-content: space-between;
   }
@@ -86,12 +86,12 @@
   }
 }
 // Small device
-@media (min-width: 375px) and (max-width: 560px) {
+@media (min-width: 321px) and (max-width: 560px) {
   .profil {
-    margin-top: 17vh;
+    margin-top: 11vh;
   }
   .profil-top {
-    height: 60vh;
+    height: 0%;
   }
   .profil-top::after {
     content: '';
@@ -104,6 +104,12 @@
   }
   #button-profil-top {
     margin-right: 8px;
+  }
+  .buttons-profil {
+    margin-top: 60px;
+    width: 163%;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
