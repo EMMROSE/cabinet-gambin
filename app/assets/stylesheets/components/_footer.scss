@@ -5,10 +5,10 @@
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
-  height: 25vh;
+  min-height: 25vh;
   padding: 16px 12px;
   color: rgba(0,0,0,0.3);
-  p, a {font-size: 0.8rem; color: black; font-weight: bold;}
+  p, a {font-size: 0.7rem; color: black; font-weight: bold;}
   a {
     i {color: red;}
     &:hover {text-decoration: none;}
