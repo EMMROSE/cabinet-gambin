@@ -1,89 +1,23 @@
+
+  // img {
+  //   width: 80px;
+  //   height: 80px;
+  //   position: absolute;
+  //   top: 2px; right: 6px;
+  // }
+
+
 .footer {
-  // background: #000000;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-color: white;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 120px;
-  padding: 8px 16px;
+  height: 140px;
+  padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-  position: relative;
-  .mention {
-    font-size: 20px;
-    position: absolute;
-    bottom: 2px; left: 6px;
-  }
-  .footer-left p {
-    text-align: left;
-    color: #333333;
-    font-weight: bold;
-    font-size: 0.7rem !important;
-    margin-bottom: 0px;
-  }
+  p, a {font-size: 1.0rem; color: black;}
   a {
-    color: black;
-    opacity: 0.8;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 0px 10px;
-    position: absolute;
-    bottom: 6px; right: 0px;
-  }
-  img {
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 2px; right: 6px;
-  }
-}
-// SMALL DEVICE
-@media (min-width: 100px) and (max-width: 320px){
-  .footer {
-    .mention {
-      font-size: 16px;
-      position: absolute;
-      bottom: 5px; left: 6px;
-    }
-  }
-}
-// MEDIUM DEVICES
-@media (min-width: 560px) and (max-width: 815px){
-  .footer {
-    a {
-      font-size: 32px;
-      padding: 0px 0px;
-      position: absolute;
-      bottom: 2px; right: 0px;
-    }
-    .mention {
-      font-size: 18px;
-      position: absolute;
-      bottom: 0px; left: 16px;
-    }
-  }
-}
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .footer {
-    height: 180px;
-    padding: 24px 72px 16px 36px;
-    .footer-left p {font-size: 1.0rem !important;}
-    img {
-      width: 100px;
-      height: 100px;
-      top: 24px; right: 36px;
-    }
-    a {
-      font-size: 32px;
-      padding: 0px 0px;
-      position: absolute;
-      bottom: 8px; right: 36px;
-    }
-    .mention {
-      font-size: 1.25rem;
-      position: absolute;
-      bottom: 8px; left: 36px;
-    }
+    i {color: red;}
+    &:hover {text-decoration: none;}
   }
 }
