@@ -1,9 +1,10 @@
-
-<!--   <%= image_tag "logofooter.jpg" %>  -->
-
-
 <div class="footer">
-  <p>Me Thibault Gamblin<br>35, Avenue Delaville<br>50100 CHERBOURG EN COTENTIN<br>02 33 78 04 01<br>gamblin.thibault@avocat-conseil.fr</p>
-  <%= link_to "mentions légales", mention_path, class: "mention" %>
-  <a href="https://www.emrose.fr/" style="font-size: 15px">Réalisé par EmRose</a>
+  <div class="footer-left">
+    <p>Me Thibault Gamblin<br>35, Avenue Delaville<br>50100 CHERBOURG EN COTENTIN<br>02 33 78 04 01<br>gamblin.thibault@avocat-conseil.fr</p>
+  </div>
+  <div class="footer-right">
+    <%= image_tag "logofooter.jpg" %>
+    <a href="https://www.emrose.fr/">Réalisé par EmRose</a>
+    <%= link_to "Mentions légales", mention_path, class: "mention" %>
+  </div>
 </div>
