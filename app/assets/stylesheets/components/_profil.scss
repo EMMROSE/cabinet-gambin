@@ -64,9 +64,9 @@
 }
 
 // Smallest device
-@media (min-width: 100px) and (max-width: 375px) {
+@media (min-width: 100px) and (max-width: 374px) {
   .profil {
-    margin-top: 9vh;
+    margin-top: 11vh;
   }
   .buttons-profil {
     margin-top: 16px;
@@ -75,17 +75,23 @@
     justify-content: space-between;
   }
   .profil-top {
-    height: 60vh;
+    height: 50vh;
+  }
+  .profil-top-left {
+    width: 37%;
   }
   #button-profil-top {
     font-size: 0.7rem;
     margin-right: 16px;
   }
 }
-// Smallest device
-@media (min-width: 100px) and (max-width: 812px) {
+// Small device
+@media (min-width: 375px) and (max-width: 560px) {
+  .profil {
+    margin-top: 17vh;
+  }
   .profil-top {
-    height: 40vh;
+    height: 60vh;
   }
   .profil-top::after {
     content: '';
@@ -101,14 +107,56 @@
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+// Small device LANDSCAPE IPHONE 5
+@media (min-width: 561px) and (max-width: 660px) {
+  .profil {
+    margin-top: 17vh;
+  }
+  .profil-top {
+    height: 86vh;
+  }
+  .buttons-profil {
+    margin-top: 56px;
+  }
+  .profil-top::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    bottom: 0px;
+    left: 33%;
+  }
 
+  #button-profil-top {
+    margin-right: 8px;
+  }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+// Small device LANDSCAPE IPHONE 6 - X
+@media (min-width: 661px) and (max-width: 812px) {
+  .profil {
+    margin-top: 17vh;
+  }
+  .profil-top {
+    height: 70vh;
+  }
+  .buttons-profil {
+    margin-top: 56px;
+  }
+  .profil-top::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: white;
+    width: 33%;
+    bottom: 0px;
+    left: 33%;
+  }
 
+  #button-profil-top {
+    margin-right: 8px;
+  }
 }
 
 // Large devices (desktops, 992px and up)

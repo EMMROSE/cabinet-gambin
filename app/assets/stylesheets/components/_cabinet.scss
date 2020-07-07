@@ -36,14 +36,15 @@
 
 #buttonrdv { margin-left: 37%; }
 // Mediuym devices
-@media (min-width: 100px) and (max-width: 815px) {
+@media (min-width: 568px) and (max-width: 815px) {
   .cabinet {
+    margin-top: 20vh;
     img {
       height: 70vh;
     }
   }
-  #phone { margin-left: 20%;}
-  #buttonrdv { margin-left: 30%; }
+  #phone { margin-left: 33%;}
+  #buttonrdv { margin-left: 37%; }
 }
 
 // Large devices (desktops, 992px and up)

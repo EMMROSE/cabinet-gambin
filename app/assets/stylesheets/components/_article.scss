@@ -91,9 +91,10 @@
   align-items: center;
   padding: 16px;
   color: white;
+  margin-top: 10vh;
   img {
-    height: 28vh;
-    width: auto;
+    height: auto;
+    width: 33%;
     margin-bottom: 16px;
     border-radius: 8px;
   }
@@ -141,6 +142,9 @@
   .article {
     height: 80vh;
   }
+  .article-show {
+    margin-top: 20vh;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -186,6 +190,7 @@
   }
   .article-show {
     padding: 64px;
+    margin-top: 10vh;
     img {
       height: 28vh;
       width: 33%;
