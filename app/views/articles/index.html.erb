@@ -1,12 +1,19 @@
-<div class="articles-index">
-<% @articles.each do |article| %>
-  <div class= "article-index">
-    <%= cl_image_tag article.cover.key%>
-    <div class= "article-index-text">
-      <h3><%= article.title %></h3>
-      <p><%= article.resume %></p>
-      <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button-index"%>
+<% if Article.count == 0 %>
+  <div class="rubrique">
+    <h5 style="color:white;">Parcourez prochainement mes articles sur l'actualité juridique</h5>
+    <%= link_to "REVENIR A L'ACCUEIL", root_path, class: "nav-button", id:'button-profil-top'%>
+  </div>
+<% else %>
+  <div class="articles-index">
+  <% @articles.each do |article| %>
+    <div class= "article-index">
+      <%= cl_image_tag article.cover.key%>
+      <div class= "article-index-text">
+        <h3><%= article.title %></h3>
+        <p><%= article.resume %></p>
+        <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button-index"%>
+      </div>
     </div>
+  <% end %>
   </div>
 <% end %>
-</div>

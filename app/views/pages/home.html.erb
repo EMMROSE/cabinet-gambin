@@ -124,13 +124,19 @@
   <div class= "rubrique">
     <h2 class="title_actu d-none" id="js-animation2">Actualités</h2>
   </div>
-  <div class ="articles">
-      <% @articles.each do |article| %>
-        <div class= "article">
-          <%= cl_image_tag article.cover.key%>
-          <h5><%= article.title %></h5>
-          <p><%= article.resume %></p>
-          <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button"%>
-        </div>
-      <% end %>
-  </div>
+    <% if Article.count == 0 %>
+      <div class="rubrique">
+        <h5 style="color:white;">Parcourez prochainement mes articles sur l'actualité juridique</h5>
+      </div>
+    <% else %>
+      <div class ="articles">
+        <% @articles.each do |article| %>
+          <div class= "article">
+            <%= cl_image_tag article.cover.key%>
+            <h5><%= article.title %></h5>
+            <p><%= article.resume %></p>
+            <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button"%>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
