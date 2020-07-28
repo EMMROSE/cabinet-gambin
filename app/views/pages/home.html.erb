@@ -122,7 +122,8 @@
   </div>
 
   <div class= "rubrique">
-    <h2 class="title_actu d-none" id="js-animation2">Actualités</h2>
+     <!-- <h2 class="title_actu d-none" id="js-animation2">Actualités</h2> -->
+    <%= link_to "ACTUALITES", articles_path, class: "nav-button actualites-button", id:"js-animation2"%>
   </div>
     <% if Article.count == 0 %>
       <div class="rubrique">
