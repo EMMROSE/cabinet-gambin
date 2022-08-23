@@ -11,12 +11,12 @@
     "popper.js": "^1.16.1",
     "turbolinks": "^5.2.0",
     "node-gyp": "^8.4.1",
-    "node-sass": ">4.12"
+    "node-sass": ">6.0"
   },
   "version": "0.1.0",
   "engines": {
     "npm": "8.15.0",
-    "node": "12.x"
+    "node": "16.x"
   },
   "devDependencies": {
     "webpack-dev-server": "^4.0.0 || ^5.0.0"
