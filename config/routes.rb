@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'cabinet', to: 'pages#cabinet'
   get 'admin', to: 'pages#admin'
   get 'mention', to: 'pages#mention'
-  get 'new_page', to: 'pages#avocat_droit_de_la_famille_à_cherbourg'
+  get 'avocat_droit_de_la_famille_cherbourg', to: 'pages#avocat_droit_de_la_famille_cherbourg'
 
   resources :articles
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
