@@ -1,10 +1,19 @@
+  <% @title="Avocat à Cherbourg - Maître Gamblin Avocat" %>
     <%= render 'shared/banner' %>
+  <div class="rubrique" style="text-align: justify; padding: 32px;">
+    <p style="opacity: .7;">La ville de Cherbourg-en-Cotentin propose les services juridiques de plusieurs avocats du Barreau de la cité
+  Normande. Le cabinet de Me Thibault Gamblin a pour particularité de vous proposer, depuis plusieurs années, des
+  services différenciés dans les différents domaines du Droit. En contactant Me Gamblin, vous pouvez obtenir des
+  réponses ainsi qu'une assistance juridique tant en matière de droit de la famille, droit civil, droit pénal ou encore
+  droit commercial. Pour apporter des précisions complémentaires à vos éventuelles interrogations, voyons plus
+  précisément à quoi se réfèrent ces différents secteurs du droit.</p>
+  </div>
   <div class="rubrique">
     <h2 class="title_formule d-none" id="js-animation">Domaines d'intervention</h2>
     <br>
   </div>
   <div class= "cards">
-    <%= link_to domaine_path(anchor: 'famille') do %>
+    <%= link_to avocat_droit_de_la_famille_cherbourg_path(anchor: 'famille') do %>
     <div class= "card">
       <img src="../assets/family.png" alt="">
       <p>Droit de la famille</p>
@@ -127,7 +136,7 @@
   </div>
     <% if Article.count == 0 %>
       <div class="rubrique">
-        <h5 style="color:white;">Parcourez prochainement mes articles sur l'actualité juridique</h5>
+        <p style="color:white; font-size: 1.25rem; font-weight: 500; line-height: 1.2;">Parcourez prochainement mes articles sur l'actualité juridique</p>
       </div>
     <% else %>
       <div class ="articles">
@@ -141,3 +150,51 @@
         <% end %>
       </div>
     <% end %>
+  <!-- texte ajouter pour le référencement  -->
+  <div class="endofhome">
+    <h3>Le droit de la famille :</h3>
+    <p>Le droit de la famille est une branche importante du droit civil, régissant les liens juridiques existant entre les
+    membres d'une même famille. Ce type de droit est essentiellement axé sur deux points particuliers :
+    - les liens d'alliance entre les couples,
+    - les liens de parenté concernant les ascendants et descendants.
+    Dans cette logique, vous pouvez contacter Me Thibault Gamblin pour tout litige relevant du mariage, d'un pacs, du
+    concubinage, et naturellement pour tout ce qui touche au divorce.
+    Votre avocat, Me Gamblin à Cherbourg, pourra vous assister également pour ce qui relève des liens parents-enfants.
+    Particulièrement : la filiation, l'adoption et le droit des grands-parents.
+    Rappelons que ces problématiques relèvent du Juge aux Affaires familiales.</p>
+    <h3>Le droit Civil: </h3>
+    <p>Le droit civil encadre les rapports entre les différentes personnes dites privées. Cela concerne les échanges entre
+    elles et concernant les biens. Codifié dans le Code Civil édicté par Napoléon, ce droit couvre nombre de secteurs de
+    notre vie sociale. A commencer, par le droit des personnes. Il prend en compte l'existence complète des personnes,
+    depuis leur naissance jusqu'à leur décès.
+    Ensuite, nous trouvons différents champs d'application du droit civil comme :
+    - droit de la famille (déjà évoqué)
+    - des biens,
+    - des obligations, des successions et des sûretés,
+    - de la consommation,
+    - des assurances,
+    - des baux locatifs,
+    - bancaire,
+    etc.
+    Dans tous ces domaines, vous pouvez prendre rendez-vous avec Me Gamblin, il saura vous répondre au mieux de
+    vos intérêts.</p>
+    <h3>Le droit pénal :</h3>
+    <p>Le droit pénal répond aux comportements s'opposant aux règles de bon fonctionnement de notre société. Il traite des
+    infractions et interdictions aux lois sociales répertoriées notamment dans le Code pénal. Ce dernier détermine les
+    éléments constitutifs de l’infraction selon leur nature et fixe les peines encourues.
+    Par exemple : Les articles 222-7 et suivant du Code pénal, traitent des coups et blessures. Suivant les circonstances,
+    les auteurs encourent une peine de 3 à 7 ans de prison, assortie d'une amende dont le montant maximum varie de 45
+    000 à 100 000 euros.</p>
+    <h3>Le droit commercial :</h3>
+    <p>Le droit commercial, branche du droit privé régissant les opérations commerciales et les relations entre, ou avec, les
+    commerçants. Historiquement dérivé du droit des marchands, c'était par le passé un droit corporatif. L'évolution de
+    notre société et des aspects du droit économique, fait que ce domaine s'étend aujourd'hui à un nombre plus large de
+    personnes. En effet, les actes de commerce ne sont plus réservés aux seuls commerçants. Ils relèvent de noncommerçants.
+    Ce secteur touche aux contrats de vente, aux problèmes de concurrence, aux procédures collectives. C'est donc un
+    domaine qui a tendance à couvrir un espace de plus en plus large.</p>
+    <h2>Le champ de compétence de Me Thibault Gamblin :</h2>
+    <p>Installé à Cherbourg-en-Cotentin, Me Gamblin avocat inscrit au Barreau depuis 2015, est indépendant depuis 2018.
+    Diplômé du CAPA, il est en plus titulaire de deux masters et donc parfaitement habilité à vous assister dans les
+    différents domaines du droit que nous vous avons présenté. Doté d’une grande capacité d’écoute, il est apte à vous
+    conseiller et vous défendre quel que soit votre besoin.</p>
+  </div>
