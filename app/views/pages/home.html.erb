@@ -1,4 +1,5 @@
   <% @title="Avocat à Cherbourg - Maître Gamblin Avocat" %>
+
     <%= render 'shared/banner' %>
   <div class="rubrique" style="text-align: justify; padding: 32px;">
     <p style="opacity: .7;">La ville de Cherbourg-en-Cotentin propose les services juridiques de plusieurs avocats du Barreau de la cité
@@ -41,26 +42,29 @@
   <!-- DISPLAY FLIPCARD WHEN SCREEN > 992px -->
   <div class="cols">
         <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <%= link_to avocat_droit_de_la_famille_cherbourg_path(anchor: 'famille') do %>
           <div class="container">
-            <div class="front" style="background-image: url(../assets/family2.jpg); filter: brightness(1.75);">
-              <div class="inner">
-                <p>Droit de la famille</p>
+              <div class="front" style="background-image: url(../assets/family2.jpg); filter: brightness(1.75);">
+                <div class="inner">
+                  <p>Droit de la famille</p>
+                </div>
               </div>
-            </div>
-            <div class="back">
-              <div class="inner">
-                <p>Divorce</p>
-                <p>Sortie d’indivision</p>
-                <p>Succession</p>
-                <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
-                <p>Pensions alimentaires</p>
-                <p>Adoption</p>
-                <p>...</p>
+              <div class="back">
+                <div class="inner">
+                  <p>Divorce</p>
+                  <p>Sortie d’indivision</p>
+                  <p>Succession</p>
+                  <p>Mode de résidence des enfants & contribution à l’entretien et l’éducation des enfants</p>
+                  <p>Pensions alimentaires</p>
+                  <p>Adoption</p>
+                  <p>...</p>
+                </div>
               </div>
-            </div>
           </div>
+          <% end %>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <%= link_to domaine_path(anchor: 'civil') do %>
           <div class="container">
             <div class="front" style="background-image: url(../assets/civil.jpg); filter: brightness(1.75);">
               <div class="inner">
@@ -81,8 +85,10 @@
               </div>
             </div>
           </div>
+          <% end %>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <%= link_to domaine_path(anchor: 'penal') do %>
           <div class="container">
             <div class="front" style="background-image: url(../assets/hammer.jpg); filter: brightness(1.75);">
               <div class="inner">
@@ -100,8 +106,10 @@
               </div>
             </div>
           </div>
+          <% end %>
         </div>
         <div class="col" ontouchstart="this.classList.toggle('hover');">
+          <%= link_to domaine_path(anchor: 'commercial') do %>
           <div class="container">
             <div class="front" style="background-image: url(../assets/commercial.jpg); filter: brightness(1.75);">
               <div class="inner">
@@ -117,6 +125,7 @@
               </div>
             </div>
           </div>
+        <% end %>
         </div>
   </div>
   <!--   END OF FLIPCARD SECTION -->
