@@ -143,12 +143,12 @@
      <!-- <h2 class="title_actu d-none" id="js-animation2">Actualités</h2> -->
     <%= link_to "ACTUALITES", articles_path, class: "nav-button actualites-button", id:"js-animation2"%>
   </div>
-    <% if Article.count == 0 %>
+<!--     <% if Article.count == 0 %> -->
       <div class="rubrique">
         <p style="color:white; font-size: 1.25rem; font-weight: 500; line-height: 1.2;">Parcourez prochainement mes articles sur l'actualité juridique</p>
       </div>
     <% else %>
-      <div class ="articles">
+<!--       <div class ="articles">
         <% @articles.each do |article| %>
           <div class= "article">
             <%= cl_image_tag article.cover.key%>
@@ -156,7 +156,7 @@
             <p><%= article.resume %></p>
             <%= link_to "LIRE", article_path(article), class: "nav-button", id:"lire-button"%>
           </div>
-        <% end %>
+        <% end %> -->
       </div>
     <% end %>
   <!-- texte ajouter pour le référencement  -->
